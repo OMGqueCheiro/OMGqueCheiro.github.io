@@ -1,31 +1,44 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36221.1 d17.14
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMGqueCheiro", "OMGqueCheiro\OMGqueCheiro.csproj", "{D7563FE4-C3C8-455A-9005-A305CC062FBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMGqueCheiro", "OMGqueCheiro.csproj", "{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMGqueCheiro.Client", "OMGqueCheiro.Client\OMGqueCheiro.Client.csproj", "{8C70D925-5B9D-4DF8-8CAB-877A5125E3A6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutiuon Items", "Solutiuon Items", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github Actions", "Github Actions", "{F571FCE0-475E-4065-A872-AB2828CB38C0}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\main.yml = .github\workflows\main.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D7563FE4-C3C8-455A-9005-A305CC062FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7563FE4-C3C8-455A-9005-A305CC062FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7563FE4-C3C8-455A-9005-A305CC062FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7563FE4-C3C8-455A-9005-A305CC062FBA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8C70D925-5B9D-4DF8-8CAB-877A5125E3A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C70D925-5B9D-4DF8-8CAB-877A5125E3A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C70D925-5B9D-4DF8-8CAB-877A5125E3A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C70D925-5B9D-4DF8-8CAB-877A5125E3A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Debug|x64.Build.0 = Debug|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Debug|x86.Build.0 = Debug|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Release|x64.ActiveCfg = Release|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Release|x64.Build.0 = Release|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Release|x86.ActiveCfg = Release|Any CPU
+		{EDA2AEE6-1F2C-48D1-BA77-5F47F33A5115}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C9D69F8D-BAA2-417C-A22C-8B068C87F9CD}
+	GlobalSection(NestedProjects) = preSolution
+		{F571FCE0-475E-4065-A872-AB2828CB38C0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 EndGlobal
