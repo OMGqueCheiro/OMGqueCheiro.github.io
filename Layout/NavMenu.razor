@@ -1,39 +1,18 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">OMGqueCheiro</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
-
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="nav flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
-@code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}
+﻿<nav class="navbar horizontal-navbar">
+    <ul class="nav-list">
+        <li><NavLink href="/" Match="NavLinkMatch.All">Home</NavLink></li>
+        <li class="dropdown">
+            <span class="dropbtn">Produtos</span>
+            <ul class="dropdown-content">
+                <li><NavLink href="/produtos/maternoinfantil">Lembranças | MaternoInfantil</NavLink></li>
+                <li><NavLink href="/produtos/aniversario">Lembranças | Aniversário</NavLink></li>
+                <li><NavLink href="/produtos/batizado">Lembranças | Batizado</NavLink></li>
+                <li><NavLink href="/produtos/casamento">Lembranças | Casamento</NavLink></li>
+                <li><NavLink href="/produtos/empresariais">Lembranças | Empresariais</NavLink></li>
+                <li><NavLink href="/produtos/perfumados">Produtos Especiais</NavLink></li>
+            </ul>
+        </li>
+        <li><NavLink href="/contatos">Contato</NavLink></li>
+        <li><NavLink href="/sobre">Sobre</NavLink></li>
+    </ul>
+</nav>
