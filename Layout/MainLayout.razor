@@ -1,5 +1,15 @@
 ﻿@inherits LayoutComponentBase
 
+@* Required *@
+<MudThemeProvider />
+<MudPopoverProvider />
+
+@* Needed for dialogs *@
+<MudDialogProvider />
+
+@* Needed for snackbars *@
+<MudSnackbarProvider />
+
 <NavMenu />
 
 <main class="main-content">
@@ -7,3 +17,5 @@
         @Body
     </article>
 </main>
+
+<WhatsappButtom />
