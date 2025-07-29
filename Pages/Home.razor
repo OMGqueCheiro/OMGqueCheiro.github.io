@@ -4,101 +4,40 @@
 
 <MudContainer MaxWidth="MaxWidth.Large" Class="mt-6">
     <!-- Banner principal -->
-    <MudPaper Elevation="4" Class="d-flex flex-column align-items-center justify-center py-6" Style="background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%); color: white;">
-        <MudAvatar Size="Size.Large" Class="mb-3" Style="width:120px;height:120px;border:4px solid #a78bfa;background:white;" ImgSrc="https://scontent-gru2-1.cdninstagram.com/v/t51.2885-19/439806668_967849024739771_2051166346026417121_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=scontent-gru2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGCmV8-vlc4lSCZ99zj8bdcqVtWBlrKIqOjcKpZs2y_42GUv-T86gALF4JVMJwzYjs&_nc_ohc=qNj8WIVxmcoQ7kNvwFSmJtf&_nc_gid=8cCPIG9OFUtbA2Vp06rLDg&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfQhODE_bEl5nIAiD-RkVNIliDIkQIdr5xExYcdDX49v_Q&oe=687734E7&_nc_sid=7a9f4b" />
-        <MudText Typo="Typo.h3" Class="mb-1">OMG que Cheiro</MudText>
-        <MudText Typo="Typo.h5" Class="mb-3">Lembranças artesanais maternoinfantis</MudText>
-    </MudPaper>
+    <MainBanner ImgSrc="https://scontent-gru2-1.cdninstagram.com/v/t51.2885-19/439806668_967849024739771_2051166346026417121_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=scontent-gru2-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QGCmV8-vlc4lSCZ99zj8bdcqVtWBlrKIqOjcKpZs2y_42GUv-T86gALF4JVMJwzYjs&_nc_ohc=qNj8WIVxmcoQ7kNvwFSmJtf&_nc_gid=8cCPIG9OFUtbA2Vp06rLDg&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfQhODE_bEl5nIAiD-RkVNIliDIkQIdr5xExYcdDX49v_Q&oe=687734E7&_nc_sid=7a9f4b"
+                Title="OMG que Cheiro"
+                Subtitle="Lembranças artesanais maternoinfantis" />
 
     <MudDivider Class="my-6" />
 
     <!-- Sobre nós -->
-    <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-2 font-weight-bold">Sobre nós</MudText>
+    <SectionTitle Title="Sobre nós" />
     <MudText Class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.</MudText>
 
     <MudDivider Class="my-6" />
 
     <!-- Produtos -->
-    <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-2 font-weight-bold">Produtos & Lembranças</MudText>
-    <MudGrid Class="mb-6" Gutter="GutterSize.Small">
-        <MudItem xs="12" sm="6" md="4">
-            <MudCard>
-                <MudCardMedia Image="https://via.placeholder.com/300x200?text=Sabonetes" Style="height:200px;" />
-                <MudCardContent>
-                    <MudText Typo="Typo.h6">Sabonetes</MudText>
-                    <MudText>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem xs="12" sm="6" md="4">
-            <MudCard>
-                <MudCardMedia Image="https://via.placeholder.com/300x200?text=Home+Spray" Style="height:200px;" />
-                <MudCardContent>
-                    <MudText Typo="Typo.h6">Home Spray</MudText>
-                    <MudText>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem xs="12" sm="6" md="4">
-            <MudCard>
-                <MudCardMedia Image="https://via.placeholder.com/300x200?text=Velas" Style="height:200px;" />
-                <MudCardContent>
-                    <MudText Typo="Typo.h6">Velas</MudText>
-                    <MudText>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem xs="12" sm="6" md="4">
-            <MudCard>
-                <MudCardMedia Image="https://via.placeholder.com/300x200?text=Sachê+Perfumado" Style="height:200px;" />
-                <MudCardContent>
-                    <MudText Typo="Typo.h6">Sachê Perfumado</MudText>
-                    <MudText>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem xs="12" sm="6" md="4">
-            <MudCard>
-                <MudCardMedia Image="https://via.placeholder.com/300x200?text=Kits" Style="height:200px;" />
-                <MudCardContent>
-                    <MudText Typo="Typo.h6">Kits</MudText>
-                    <MudText>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem xs="12" sm="6" md="4">
-            <MudCard>
-                <MudCardMedia Image="https://via.placeholder.com/300x200?text=Lembranças+Personalizadas" Style="height:200px;" />
-                <MudCardContent>
-                    <MudText Typo="Typo.h6">Lembranças Personalizadas</MudText>
-                    <MudText>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-    </MudGrid>
+    <SectionTitle Title="Produtos & Lembranças" />
+    <ProductGrid Products="@ProductList" />
 
     <MudDivider Class="my-6" />
 
     <!-- Depoimentos -->
-    <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-2 font-weight-bold">Depoimentos</MudText>
+    <SectionTitle Title="Depoimentos" />
     <MudGrid>
-        <MudItem xs="12" md="6">
-            <MudCard Class="mb-3">
-                <MudCardContent>
-                    <MudText>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac neque nec nisi blandit commodo."</MudText>
-                    <MudText Typo="Typo.subtitle2" Color="Color.Secondary">Cliente satisfeito</MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem xs="12" md="6">
-            <MudCard Class="mb-3">
-                <MudCardContent>
-                    <MudText>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, urna eu tincidunt consectetur."</MudText>
-                    <MudText Typo="Typo.subtitle2" Color="Color.Secondary">Mamãe feliz</MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
+        <TestimonialCard Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac neque nec nisi blandit commodo." Author="Cliente satisfeito" />
+        <TestimonialCard Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, urna eu tincidunt consectetur." Author="Mamãe feliz" />
     </MudGrid>
 </MudContainer>
 
 <!-- Removido CSS customizado, pois MudBlazor cobre a estilização -->
+@code {
+    private List<ProductModel> ProductList = new(){
+        new ProductModel { ImageUrl = "https://via.placeholder.com/300x200?text=Sabonetes", Title = "Sabonetes", Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+        new ProductModel { ImageUrl = "https://via.placeholder.com/300x200?text=Home+Spray", Title = "Home Spray", Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+        new ProductModel { ImageUrl = "https://via.placeholder.com/300x200?text=Velas", Title = "Velas", Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+        new ProductModel { ImageUrl = "https://via.placeholder.com/300x200?text=Sachê+Perfumado", Title = "Sachê Perfumado", Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+        new ProductModel { ImageUrl = "https://via.placeholder.com/300x200?text=Kits", Title = "Kits", Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+        new ProductModel { ImageUrl = "https://via.placeholder.com/300x200?text=Lembranças+Personalizadas", Title = "Lembranças Personalizadas", Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit." }
+    };
+    }
