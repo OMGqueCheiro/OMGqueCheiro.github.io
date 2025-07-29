@@ -1,18 +1,18 @@
-﻿<nav class="navbar horizontal-navbar">
-    <ul class="nav-list">
-        <li><NavLink href="/" Match="NavLinkMatch.All">Home</NavLink></li>
-        <li class="dropdown">
-            <span class="dropbtn">Produtos</span>
-            <ul class="dropdown-content">
-                <li><NavLink href="/produtos/maternoinfantil">Lembranças | MaternoInfantil</NavLink></li>
-                <li><NavLink href="/produtos/aniversario">Lembranças | Aniversário</NavLink></li>
-                <li><NavLink href="/produtos/batizado">Lembranças | Batizado</NavLink></li>
-                <li><NavLink href="/produtos/casamento">Lembranças | Casamento</NavLink></li>
-                <li><NavLink href="/produtos/empresariais">Lembranças | Empresariais</NavLink></li>
-                <li><NavLink href="/produtos/perfumados">Produtos Especiais</NavLink></li>
-            </ul>
-        </li>
-        <li><NavLink href="/contatos">Contato</NavLink></li>
-        <li><NavLink href="/sobre">Sobre</NavLink></li>
-    </ul>
-</nav>
+﻿<MudAppBar Color="Color.Primary" Fixed="true" Contextual Class="d-flex flex-row justify-center">
+        <MudNavLink Href="/" Match="NavLinkMatch.All">Home</MudNavLink>
+        <MudMenu FullWidth="true"  ActivationEvent="@MouseEvent.MouseOver" Class="cursor-default" AnchorOrigin="Origin.BottomCenter" TransformOrigin="Origin.TopCenter" Modal="false">
+            <ActivatorContent>
+                <MudChip T="string" Color="Color.Primary" >Produtos</MudChip>
+            </ActivatorContent>
+            <ChildContent>
+                <MudMenuItem Href="/produtos/maternoinfantil" Label="Lembranças | MaternoInfantil" />
+                <MudMenuItem Href="/produtos/aniversario" Label="Lembranças | Aniversário" />
+                <MudMenuItem Href="/produtos/batizado" Label="Lembranças | Batizado" />
+                <MudMenuItem Href="/produtos/casamento" Label="Lembranças | Casamento" />
+                <MudMenuItem Href="/produtos/empresariais" Label="Lembranças | Empresariais" />
+                <MudMenuItem Href="/produtos/perfumados" Label="Produtos Especiais" />
+            </ChildContent>
+        </MudMenu>
+        <MudNavLink Href="/contatos">Contato</MudNavLink>
+        <MudNavLink Href="/sobre">Sobre</MudNavLink>
+</MudAppBar>
