@@ -1,13 +1,14 @@
 @page "/produtos/empresariais"
 <PageTitle>Lembranças | Empresariais</PageTitle>
 
-<MudContainer MaxWidth="MaxWidth.Medium" Class="mt-6">
-    <SectionTitle Title="Lembranças | Empresariais" />
-    <MudText Class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição dos produtos e trabalhos empresariais.</MudText>
-    <SectionTitle Title="Imagens de Produtos" />
-    <MudPaper Class="mb-4 p-4" Elevation="1">
-        <MudText><em>Espaço reservado para imagens de produtos já feitos.</em></MudText>
-    </MudPaper>
-    <SectionTitle Title="Depoimentos" />
-    <TestimonialCard Text="Lorem ipsum dolor sit amet, cliente satisfeito com as lembranças empresariais." Author="Cliente" />
-</MudContainer>
+@code {
+    private List<OMGqueCheiro.Model.TestimonialModel> testimonials = new()
+    {
+        new OMGqueCheiro.Model.TestimonialModel { Text = "Lorem ipsum dolor sit amet, cliente satisfeito com as lembranças empresariais.", Author = "Cliente" }
+    };
+}
+
+<ProductCategoryPage
+    Title="Lembranças | Empresariais"
+    Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição dos produtos e trabalhos empresariais."
+    Testimonials="@testimonials" />

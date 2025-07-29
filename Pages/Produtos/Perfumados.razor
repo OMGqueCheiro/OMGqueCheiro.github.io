@@ -1,13 +1,14 @@
 @page "/produtos/perfumados"
 <PageTitle>Produtos Perfumados</PageTitle>
 
-<MudContainer MaxWidth="MaxWidth.Medium" Class="mt-6">
-    <SectionTitle Title="Produtos Perfumados" />
-    <MudText Class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição dos produtos perfumados.</MudText>
-    <SectionTitle Title="Imagens de Produtos" />
-    <MudPaper Class="mb-4 p-4" Elevation="1">
-        <MudText><em>Espaço reservado para imagens de produtos já feitos.</em></MudText>
-    </MudPaper>
-    <SectionTitle Title="Depoimentos" />
-    <TestimonialCard Text="Lorem ipsum dolor sit amet, cliente satisfeito com os produtos perfumados." Author="Cliente" />
-</MudContainer>
+@code {
+    private List<OMGqueCheiro.Model.TestimonialModel> testimonials = new()
+    {
+        new OMGqueCheiro.Model.TestimonialModel { Text = "Lorem ipsum dolor sit amet, cliente satisfeito com os produtos perfumados.", Author = "Cliente" }
+    };
+}
+
+<ProductCategoryPage
+    Title="Produtos Perfumados"
+    Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição dos produtos perfumados."
+    Testimonials="@testimonials" />

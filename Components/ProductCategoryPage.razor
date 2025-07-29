@@ -1,0 +1,29 @@
+@* Componente genérico para páginas de categoria de produto *@
+<MudContainer MaxWidth="MaxWidth.Medium" Class="mt-6">
+    <SectionTitle Title="@Title" />
+    <MudText Class="mb-4">@Description</MudText>
+    <SectionTitle Title="Imagens de Produtos" />
+    <MudPaper Class="mb-4 p-4" Elevation="1">
+        <MudText><em>@ImageSectionText</em></MudText>
+        @if (Products != null && Products.Count > 0)
+        {
+            <ProductGrid Products="@Products" />
+        }
+    </MudPaper>
+    <SectionTitle Title="Depoimentos" />
+    @if (Testimonials != null && Testimonials.Count > 0)
+    {
+        @foreach (var testimonial in Testimonials)
+        {
+            <TestimonialCard Text="@testimonial.Text" Author="@testimonial.Author" />
+        }
+    }
+</MudContainer>
+
+@code {
+    [Parameter] public string Title { get; set; }
+    [Parameter] public string Description { get; set; }
+    [Parameter] public string ImageSectionText { get; set; } = "Espaço reservado para imagens de produtos já feitos.";
+    [Parameter] public List<ProductModel> Products { get; set; }
+    [Parameter] public List<TestimonialModel> Testimonials { get; set; }
+}
