@@ -1,0 +1,14 @@
+@using OMGqueCheiro.Model
+@* Componente para grid de produtos *@
+<MudGrid Class="mb-6" Gutter="GutterSize.Small">
+    @foreach (var product in Products)
+    {
+        <MudItem xs="12" sm="6" md="4">
+            <ProductCard ImageUrl="@product.ImageUrl" Title="@product.Title" Description="@product.Description" />
+        </MudItem>
+    }
+</MudGrid>
+
+@code {
+    [Parameter] public List<ProductModel> Products { get; set; } = new();
+}

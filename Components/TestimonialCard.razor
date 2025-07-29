@@ -1,0 +1,12 @@
+@* Componente para depoimento *@
+<MudCard Class="mb-3">
+    <MudCardContent>
+        <MudText>"@Text"</MudText>
+        <MudText Typo="Typo.subtitle2" Color="Color.Secondary">@Author</MudText>
+    </MudCardContent>
+</MudCard>
+
+@code {
+    [Parameter] public string Text { get; set; }
+    [Parameter] public string Author { get; set; }
+}

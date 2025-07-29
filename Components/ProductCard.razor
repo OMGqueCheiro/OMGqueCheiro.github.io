@@ -1,0 +1,14 @@
+@* Componente para card de produto *@
+<MudCard>
+    <MudCardMedia Image="@ImageUrl" Style="height:200px;" />
+    <MudCardContent>
+        <MudText Typo="Typo.h6">@Title</MudText>
+        <MudText>@Description</MudText>
+    </MudCardContent>
+</MudCard>
+
+@code {
+    [Parameter] public string ImageUrl { get; set; }
+    [Parameter] public string Title { get; set; }
+    [Parameter] public string Description { get; set; }
+}
