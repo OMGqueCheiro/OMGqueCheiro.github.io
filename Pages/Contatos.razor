@@ -1,9 +1,17 @@
 @page "/contatos"
 <PageTitle>Contatos</PageTitle>
 
-<h1>Contatos</h1>
-<p>Entre em contato conosco:</p>
-<ul>
-    <li>WhatsApp: <a href="https://wa.me/5533984617179" target="_blank">(53) 98461-7179</a></li>
-    <li>Instagram: <a href="https://www.instagram.com/omg_quecheiro/" target="_blank">omg_quecheiro</a></li>
-</ul>
+<MudContainer MaxWidth="MaxWidth.Small" Class="mt-6">
+    <MudText Typo="Typo.h3" Class="mb-2">Contatos</MudText>
+    <MudText Class="mb-4">Entre em contato conosco:</MudText>
+    <MudList T="string" Dense="true">
+        <MudListItem T="string">
+            <MudText>WhatsApp:</MudText>
+            <MudLink Href="https://wa.me/5533984617179" Target="_blank">(53) 98461-7179</MudLink>
+        </MudListItem>
+        <MudListItem T="string">
+            <MudText>Instagram:</MudText>
+            <MudLink Href="https://www.instagram.com/omg_quecheiro/" Target="_blank">omg_quecheiro</MudLink>
+        </MudListItem>
+    </MudList>
+</MudContainer>

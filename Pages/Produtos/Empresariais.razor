@@ -1,14 +1,20 @@
 @page "/produtos/empresariais"
 <PageTitle>Lembranças | Empresariais</PageTitle>
 
-<h1>Lembranças | Empresariais</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição dos produtos e trabalhos empresariais.</p>
-
-<h3>Imagens de Produtos</h3>
-<p><em>Espaço reservado para imagens de produtos já feitos.</em></p>
-
-<h3>Depoimentos</h3>
-<blockquote>
-    <p>Lorem ipsum dolor sit amet, cliente satisfeito com as lembranças empresariais.</p>
-    <footer>- Cliente</footer>
-</blockquote>
+<MudContainer MaxWidth="MaxWidth.Medium" Class="mt-6">
+    <MudText Typo="Typo.h3" Class="mb-2">Lembranças | Empresariais</MudText>
+    <MudText Class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição dos produtos e trabalhos empresariais.</MudText>
+    <MudDivider Class="my-4" />
+    <MudText Typo="Typo.h5" Class="mb-2">Imagens de Produtos</MudText>
+    <MudPaper Class="mb-4 p-4" Elevation="1">
+        <MudText><em>Espaço reservado para imagens de produtos já feitos.</em></MudText>
+    </MudPaper>
+    <MudDivider Class="my-4" />
+    <MudText Typo="Typo.h5" Class="mb-2">Depoimentos</MudText>
+    <MudCard Class="mb-3">
+        <MudCardContent>
+            <MudText>"Lorem ipsum dolor sit amet, cliente satisfeito com as lembranças empresariais."</MudText>
+            <MudText Typo="Typo.subtitle2" Color="Color.Secondary">- Cliente</MudText>
+        </MudCardContent>
+    </MudCard>
+</MudContainer>
